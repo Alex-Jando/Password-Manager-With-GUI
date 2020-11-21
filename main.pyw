@@ -119,7 +119,7 @@ class passMainPasswordsScreen:
 		self.passwordCommands = Menu(self.menubar, tearoff=0)
 		self.passwordCommands.add_command(label="Add Password", command=self.makeAddPasswordWindow)
 		self.passwordCommands.add_command(label="Delete Password", command=self.makeDeletePasswordWindow)
-		self.passwordCommands.add_command(label="Change Master Password Password", command=self.makeChangeMasterPasswordWindow)
+		self.passwordCommands.add_command(label="Change Master Password", command=self.makeChangeMasterPasswordWindow)
 
 		self.menubar.add_cascade(menu=self.passwordCommands, label="Commands")
 		self.menubar.add_command(label="Generate Password", command=self.copyAPasswordToClipboard)
